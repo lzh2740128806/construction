@@ -1,0 +1,118 @@
+@charset "utf-8";
+html,
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+table,
+td,
+img,
+div,
+dd,
+dt,
+dl,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*去除移动端点击时的虚框*/
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*H5新标签初始化兼容性*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/*字体及颜色初始化*/
+body,
+html {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  color: #333;
+  font-size: 14px;
+  background-color: #fff;
+  font-weight: 400;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+/*列表初始化*/
+ol,
+ul,
+dl,
+li {
+  list-style: none;
+}
+em,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+img {
+  vertical-align: middle;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+/*清除焦点边框*/
+input,
+button,
+textarea,
+a {
+  vertical-align: middle;
+  outline: none;
+}
+/*闭合浮动*/
+.clearFloat {
+  zoom: 1;
+}
+.clearFloat:after {
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.icon-bg {
+  background-image: url("../images/app_icon.png");
+  background-repeat: no-repeat;
+  background-size: 10.08rem 6rem;
+}
